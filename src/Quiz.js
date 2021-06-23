@@ -16,7 +16,8 @@ class Quiz extends Component
               {/* <div className = "QuizQuestion">
               {quizData.quiz_questions[0].instruction_text}
               </div> */}
-              <QuizQuestion class ="quiz_question " {quizData.quiz_questions[quiz_position-1]}/>
+              <QuizQuestion class ="quiz_question "/> 
+              {quizData.quiz_questions[quiz_position-1]}
           </div>
         );
     }
