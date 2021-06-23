@@ -4,17 +4,14 @@ class QuizEnd extends Component
     //resetClickHandler(prop) : this.handleResetClick.bind(this);
     handleResetClick()
     {
-        this.props.resetClickHandler();
-        this.setState({quiz_position : 1});
-        <a onClick = {this.handleResetClick.bind(this)}></a>
-       
+        this.props.resetClickHandler()        
     }
     render()
     {
         return(
             <div>
         <p>Thanks for playing!</p>
-        <a href=''>Reset Quiz</a>
+        <a href='#href' onClick = {this.handleResetClick.bind(this)}>Reset Quiz</a>
       </div>
         );
     }
